@@ -25,6 +25,8 @@ body2 = body.find_all('td')
 body_list = []
 for i in body2:
     text = i.get_text()
-    #body_list.append(text)
+    if i != 6:
+        body_list.append(text)
     print(text)
+
 # %%
